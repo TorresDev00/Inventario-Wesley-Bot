@@ -1,0 +1,127 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - qué tal
+    - hola, ¿cómo estás?
+    - hola, ¿qué tal?
+    - saludos
+    - buenas
+    - ¿qué hay?
+
+- intent: despedida
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - cuídate
+    - hasta pronto
+    - hasta la próxima
+    - que tengas un buen día
+    - que tengas una buena tarde
+    - hasta más tarde
+    - chao
+
+- intent: afirmar
+  examples: |
+    - sí
+    - claro
+    - correcto
+    - así es
+    - exacto
+    - por supuesto
+    - seguro
+    - totalmente
+    - eso está bien
+
+- intent: negar
+  examples: |
+    - no
+    - para nada
+    - creo que no
+    - no me gusta eso
+    - no quiero
+    - no lo creo
+    - en absoluto
+    - no estoy seguro
+    - no realmente
+
+- intent: feliz
+  examples: |
+    - perfecto
+    - genial
+    - maravilloso
+    - increíble
+    - me siento muy bien
+    - estoy feliz
+    - estoy contento
+    - todo va excelente
+    - me siento enérgico
+    - súper bien
+    - muy contento
+    - muy alegre
+
+- intent: triste
+  examples: |
+    - me siento mal
+    - estoy triste
+    - no me siento bien
+    - estoy decepcionado
+    - tuve un mal día
+    - estoy muy triste
+    - me siento deprimido
+    - no tengo ánimos
+    - estoy desanimado
+    - no fue un buen día
+    - estoy molesto
+    - estoy preocupado
+
+- intent: desafiar_bot
+  examples: |
+    - ¿eres un bot?
+    - ¿eres una máquina?
+    - ¿hablo con un humano o un bot?
+    - ¿estoy hablando con una persona?
+    - ¿eres real?
+    - ¿eres una inteligencia artificial?
+    - ¿eres el bot del centro médico?
+
+# Intenciones específicas para el centro médico
+- intent: consultar_inventario
+  examples: |
+    - ¿Cuántas unidades de [paracetamol](medicamento) hay?
+    - ¿Tienen [Acetaminofén](medicamento) en inventario?
+    - Necesito saber si hay [ibuprofeno](medicamento)
+    - ¿Hay suficiente [paracetamol](medicamento) en stock?
+    - ¿Tienen disponibilidad de [aspirina](medicamento)?
+    - ¿Cuánto [paracetamol](medicamento) tienen disponible?
+
+- intent: solicitar_donacion
+  examples: |
+    - Quiero donar medicamentos
+    - ¿Cómo puedo donar?
+    - ¿Aceptan donaciones de medicamentos?
+    - Quisiera contribuir con medicinas
+    - ¿Puedo donar medicinas?
+    - Me gustaría hacer una donación de medicamentos
+
+- intent: preguntar_requisitos_donacion
+  examples: |
+    - ¿Qué medicamentos necesitan?
+    - ¿Qué tipo de medicamentos requieren?
+    - ¿Hay algún medicamento que necesiten más?
+    - ¿Cuáles son las medicinas más urgentes para donar?
+    - ¿Tienen una lista de medicamentos necesarios?
+
+- intent: preguntar_horarios
+  examples: |
+    - ¿Cuáles son los horarios de atención?
+    - ¿A qué hora abren?
+    - ¿Cuándo puedo llevar medicamentos?
+    - ¿A qué hora puedo hacer donaciones?
+    - ¿Cuándo están abiertos?

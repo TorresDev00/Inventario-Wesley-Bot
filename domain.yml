@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - afirmar
+  - negar
+  - feliz
+  - triste
+  - desafiar_bot
+  - consultar_inventario
+  - solicitar_donacion
+  - preguntar_requisitos_donacion
+  - preguntar_horarios
+
+responses:
+  utter_saludo:
+    - text: "¡Hola! ¿En qué puedo ayudarte?"
+  utter_despedida:
+    - text: "Adiós, ¡que tengas un buen día!"
+  utter_afirmativo:
+    - text: "¡Perfecto!"
+  utter_negativo:
+    - text: "Entendido."
+  utter_feliz:
+    - text: "¡Me alegra saberlo!"
+  utter_triste:
+    - text: "Lamento que te sientas así. Si puedo ayudarte en algo, dime."
+  utter_soy_un_bot:
+    - text: "Soy un bot, aquí para ayudarte con cualquier consulta del inventario de medicamentos."
+  utter_como_donar:
+    - text: "Puedes donar medicamentos directamente en nuestro centro durante los horarios de atención. ¡Gracias por tu apoyo!"
+  utter_requisitos_donacion:
+    - text: "Actualmente necesitamos medicamentos básicos como analgésicos, antibióticos y vitaminas. Para más detalles, por favor consulta con nosotros."
+  utter_horarios:
+    - text: "Estamos abiertos de lunes a viernes, de 8:00 a.m. a 5:00 p.m."
+  utter_inventario_no_disponible:
+    - text: "Lo siento, en este momento no tengo esa información. Intenta consultar con el personal del centro médico."
+
+actions:
+  - action_check_inventory
+
+entities:
+  - medicamento
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

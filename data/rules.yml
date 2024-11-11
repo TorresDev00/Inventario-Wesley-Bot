@@ -1,0 +1,44 @@
+version: "3.1"
+
+rules:
+
+
+- rule: Decir adiós cada vez que el usuario se despide
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Decir "Soy un bot" cuando el usuario pregunte
+  steps:
+  - intent: desafiar_bot
+  - action: utter_soy_un_bot
+
+- rule: Responder afirmativamente cuando el usuario afirma
+  steps:
+  - intent: afirmar
+  - action: utter_feliz  
+
+- rule: Responder negativamente cuando el usuario niega
+  steps:
+  - intent: negar
+  - action: utter_despedida  
+
+- rule: Consultar inventario de medicamentos
+  steps:
+  - intent: consultar_inventario
+  - action: action_check_inventory
+
+- rule: Explicar cómo hacer una donación cuando el usuario lo solicite
+  steps:
+  - intent: solicitar_donacion
+  - action: utter_como_donar
+
+- rule: Explicar los requisitos para donar medicamentos
+  steps:
+  - intent: preguntar_requisitos_donacion
+  - action: utter_requisitos_donacion
+
+- rule: Responder con los horarios del centro médico
+  steps:
+  - intent: preguntar_horarios
+  - action: utter_horarios

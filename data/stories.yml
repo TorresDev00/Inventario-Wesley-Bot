@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories:
+
+- story: camino_feliz
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: feliz
+  - action: utter_feliz
+
+- story: camino_triste_1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: triste
+  - action: utter_triste
+  - intent: afirmar
+  - action: utter_feliz
+
+- story: camino_triste_2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: triste
+  - action: utter_triste
+  - intent: negar
+  - action: utter_despedida
+
+- story: despedida_usuario
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: consulta_inventario
+  steps:
+  - intent: consultar_inventario
+  - action: action_check_inventory
+
+- story: solicitud_donacion
+  steps:
+  - intent: solicitar_donacion
+  - action: utter_como_donar
+
+- story: requisitos_donacion
+  steps:
+  - intent: preguntar_requisitos_donacion
+  - action: utter_requisitos_donacion
+
+- story: consulta_horarios
+  steps:
+  - intent: preguntar_horarios
+  - action: utter_horarios
+
+- story: desafio_bot
+  steps:
+  - intent: desafiar_bot
+  - action: utter_soy_un_bot

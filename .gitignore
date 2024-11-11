@@ -1,0 +1,9 @@
+.rasa/*
+models/
+actions/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+tests/__pycache__/
