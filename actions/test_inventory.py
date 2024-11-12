@@ -63,4 +63,4 @@ class ActionCheckInventory:
 # Llamada de prueba
 medicamento = "Acetaminofén"  # Cambia esto al medicamento que quieres consultar
 action = ActionCheckInventory(medicamento)
-action.check_inventory()
+action.check_inventory() 
