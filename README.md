@@ -71,6 +71,10 @@ conda activate nombre_del_entorno
   ```bash
   pip install mysql-connector-python
   ```
+- Instalar el Dotenv:
+  ```bash
+    pip install python-dotenv
+  ```
 
 ## Entrenamiento y Ejecución del Bot 🚀
 
@@ -88,6 +92,11 @@ conda activate nombre_del_entorno
 
 ### Para iniciar el bot en modo interactivo:
 
+1. Activar el servidor de acciones personalizadas:
+   ```bash
+   rasa run actions
+   ```
+2.  Iniciar el bot:
 ```bash
 rasa shell
 ```
