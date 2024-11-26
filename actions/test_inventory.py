@@ -1,4 +1,4 @@
-from DBConnect import DBConnect
+from actions.DBConnect import DBConnect
 
 def test_db_connection():
     db = DBConnect()
