@@ -100,6 +100,40 @@ nlu:
     - ¿Hay suficiente [paracetamol](medicamento) en stock?
     - ¿Tienen disponibilidad de [aspirina](medicamento)?
     - ¿Cuánto [paracetamol](medicamento) tienen disponible?
+    - tienes [Acetaminofén](medicamento)?
+
+- intent: consultar_fecha_vencimiento
+  examples: |
+    - Cuál es la fecha de vencimiento de [Paracetamol](medicamento)?
+    - Dame la fecha de vencimiento de [Ibuprofeno](medicamento).
+    - Cuándo se vence el [Acetaminofén](medicamento)?
+    - Quiero saber la fecha de vencimiento de [Aspirina](medicamento).
+    - Tienen la fecha de vencimiento de [Amoxicilina](medicamento)?
+    - Necesito saber cuándo expira el [Clonazepam](medicamento).
+    - Puedes decirme la fecha de caducidad de [Loratadina](medicamento)?
+    - Está a punto de vencer el [Metformina](medicamento)?
+    - Cuándo expira el medicamento [Ibuprofeno](medicamento)?
+    - Por favor, dame la fecha de vencimiento del [Diclofenaco](medicamento).
+    - Está vencido el [Omeprazol](medicamento)?
+    - Cuándo caduca el [Enalapril](medicamento)?
+    - Cuál es la fecha de caducidad de [Atorvastatina](medicamento)?
+    - Quiero saber si el [Furosemida](medicamento) está vencido.
+    - Qué fecha tiene de vencimiento el [Simvastatina](medicamento)?
+    - El [Ibuprofeno](medicamento) está vencido?
+    - Necesito saber si el [Losartán](medicamento) ya expiró.
+    - Cuánto tiempo falta para que venza el [Ketorolaco](medicamento)?
+    - El [Clindamicina](medicamento) está próximo a vencer?
+    - Puedes verificar si el [Ciprofloxacino](medicamento) está vencido?
+
+- intent: consular_entrada_mayor_medicamento
+  examples: |
+    - cuál es el medicamento que más entra al mes?
+    - qué medicamento entra más este mes?
+    - qué medicamento se recibe más durante el mes?
+    - cuál es el medicamento más recibido en el mes?
+    - cuál es el medicamento que se recibe más durante este mes por compra o donación?
+    - qué medicamento ha entrado más este mes al inventario?
+    - cuál es el medicamento que más ha sido adquirido o donado este mes?
 
 - intent: solicitar_donacion
   examples: |

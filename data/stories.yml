@@ -37,6 +37,11 @@ stories:
   - intent: consultar_inventario
   - action: action_check_inventory
 
+- story: consulta fecha de vencimiento
+  steps:
+  - intent: consultar_fecha_vencimiento
+  - action: action_check_date_expiry
+
 - story: solicitud_donacion
   steps:
   - intent: solicitar_donacion

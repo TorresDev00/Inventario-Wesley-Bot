@@ -12,6 +12,8 @@ intents:
   - solicitar_donacion
   - preguntar_requisitos_donacion
   - preguntar_horarios
+  - consultar_fecha_vencimiento
+  - consular_entrada_mayor_medicamento
 
 responses:
   utter_saludo:
@@ -39,6 +41,8 @@ responses:
 
 actions:
   - action_check_inventory
+  - action_check_date_expiry
+  - action_most_entered_medication
 
 entities:
   - medicamento

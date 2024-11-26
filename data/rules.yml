@@ -28,6 +28,16 @@ rules:
   - intent: consultar_inventario
   - action: action_check_inventory
 
+- rule: responder consulta sobre fecha de vencimiento
+  steps:
+  - intent: consultar_fecha_vencimiento
+  - action: action_check_date_expiry
+
+- rule: Responder consulta mayor entrada del mes
+  steps:
+  - intent: consular_entrada_mayor_medicamento
+  - action: action_most_entered_medication
+
 - rule: Explicar cómo hacer una donación cuando el usuario lo solicite
   steps:
   - intent: solicitar_donacion
