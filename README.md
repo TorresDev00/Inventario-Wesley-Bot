@@ -38,31 +38,37 @@ conda activate nombre_del_entorno
 #### 3. Instalar dependencias:
 
 - Instalar Spacy:
+
   ```bash
   pip install spacy
   ```
 
 - Instalar Experta:
+
   ```bash
   pip install experta
   ```
 
 - Instalar PyTorch (CPU):
+
   ```bash
   conda install pytorch cpuonly -c pytorch
   ```
 
 - Instalar Rasa con Spacy:
+
   ```bash
   pip install rasa[spacy]
   ```
 
 - Instalar Rasa SDK:
+
   ```bash
   pip install rasa-sdk
   ```
 
 - Descargar el modelo de Spacy en español:
+
   ```bash
   python -m spacy download es_core_news_md
   ```
@@ -81,6 +87,7 @@ conda activate nombre_del_entorno
 ### Para entrenar el modelo de Rasa:
 
 1. Activar el entorno:
+
    ```bash
    conda activate nombre_del_entorno
    ```
@@ -96,8 +103,10 @@ conda activate nombre_del_entorno
    ```bash
    rasa run actions
    ```
-2.  Iniciar el bot:
-```bash
-rasa shell
-```
+2. Iniciar el bot:
 
+```bash
+  a) rasa shell (para interactuar desde la terminal)
+  b) rasa run --enable-api --cors "*" --debug (para activar API REST)
+
+```

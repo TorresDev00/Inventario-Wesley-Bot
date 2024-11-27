@@ -1,6 +1,7 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from mysql.connector import connect, Error
 from actions.DBConnect import DBConnect
 
 class ActionCheckInventory(Action):
