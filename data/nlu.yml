@@ -182,10 +182,11 @@ nlu:
 
 - intent: proximo_vencimiento
   examples: |
-    - ¿Cuales son los medicamentos que se vencen próximo?
+    - ¿Cuales son los medicamentos que se vencen próximamente?
     - ¿Cuales son los medicamentos que vencen próximo?
     - ¿Cuales son los medicamentos que se vencen?
     - ¿Cuales son los medicamentos que vencen?
+    - cuales medicametos estan por vencer?
 
 - intent: medicamento_perdida
   examples: |

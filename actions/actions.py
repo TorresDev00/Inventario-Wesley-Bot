@@ -1,7 +1,6 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from mysql.connector import connect, Error
 
 # Importar acciones desde otras subcarpetas
 from actions.actions_medications.action_check_inventory import ActionCheckInventory
@@ -9,7 +8,9 @@ from actions.actions_medications.action_inventary_entry_month import ActionMostE
 from actions.actions_medications.action_date_expiry import ActionCheckDateExpiry
 from actions.actions_medications.test_inventory import test_db_connection
 from actions.actions_medications.action_maxima_donacion import ActionMaximaDonacion
-
+from actions.actions_medications.action_upcoming_to_expire import ActionUpcomingProductsToExpire
+from actions.actions_medications.action_minimum_donations import ActionMinimunDonations
+from actions.actions_medications.action_merma_products import ActionMermaProducts
 
 # from actions.helpers.utils import log_action_usage
 

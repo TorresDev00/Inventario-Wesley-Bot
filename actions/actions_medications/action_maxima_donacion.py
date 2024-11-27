@@ -13,6 +13,8 @@ class ActionMaximaDonacion(Action):
         
         db = DBConnect()
         
+        id_sede = 1
+        
         query = """
             SELECT 
                 COUNT(*) AS cantidad, 
@@ -24,17 +26,24 @@ class ActionMaximaDonacion(Action):
                 INNER JOIN tipo_producto tp ON p.id_tipoprod = tp.id_tipoprod
                 INNER JOIN presentacion pr ON pr.cod_pres = p.cod_pres
                 INNER JOIN medida m ON m.id_medida = pr.id_medida
+            WHERE
+                ps.id_sede = %s
             GROUP BY ps.lote, tp.nombrepro, pr.peso, m.nombre, p.cod_producto
             ORDER BY cantidad DESC
             LIMIT 1;
         """
         
-        result = db.execute_query(query)
+        result = db.execute_query(query, (id_sede,))
         print(f"resultado encontrado {result}")
         
         if result:
             fila = result[0]
             mensaje = (
-                f"El medicamento con mayor entrada este mes es: {fila['presentacion_producto']} "
-                f"con un total de {fila['total_entrada']} unidades en la sede {fila['nombre_sede']}."
+                f"El medicamento más donado es: {fila['producto']} "
+                f"con un total de {fila['cantidad']} unidades."
             )
+        else:
+            mensaje = "No hay medicamentos que hayan sido donados en este momento."
+        
+        dispatcher.utter_message(text=mensaje)
+        return []
