@@ -57,7 +57,47 @@ stories:
   - intent: preguntar_horarios
   - action: utter_horarios
 
-- story: desafio_bot
+# - story: desafio_bot
+#   steps:
+#   - intent: desafiar_bot
+#   - action: utter_soy_un_bot
+
+- story: maxima_donacion
   steps:
-  - intent: desafiar_bot
-  - action: utter_soy_un_bot
+  - intent: maxima_donacion
+  - action: action_maxima_donacion
+
+- story: minima_donacion
+  steps:
+  - intent: minima_donacion
+  - action: action_minima_donacion
+
+- story: proximo_vencimiento
+  steps:
+  - intent: proximo_vencimiento
+  - action: action_proximo_vencimiento
+
+- story: medicamento_perdida
+  steps:
+  - intent: medicamento_perdida
+  - action: action_medicamentos_perdidos
+
+- story: maxima_venta
+  steps:
+  - intent: maxima_venta
+  - action: action_maxima_venta
+
+- story: minima_venta
+  steps:
+  - intent: minima_venta
+  - action: action_minima_venta
+
+- story: total_donaciones_enviadas_mes
+  steps:
+  - intent: total_donaciones_enviadas_mes
+  - action: action_total_donaciones_enviadas_mes
+
+- story: total_donaciones_recibidas_mes
+  steps:
+  - intent: total_donaciones_recibidas_mes
+  - action: action_total_donaciones_recibidas_mes

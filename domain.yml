@@ -15,6 +15,15 @@ intents:
   - consultar_fecha_vencimiento
   - consular_entrada_mayor_medicamento
 
+  - maxima_donacion
+  - minima_donacion
+  - proximo_vencimiento
+  - medicamento_perdida
+  - maxima_venta
+  - minima_venta
+  - total_donaciones_enviadas_mes
+  - total_donaciones_recibidas_mes
+
 responses:
   utter_saludo:
     - text: "¡Hola! ¿En qué puedo ayudarte?"
@@ -43,6 +52,15 @@ actions:
   - action_check_inventory
   - action_check_date_expiry
   - action_most_entered_medication
+
+  - action_maxima_donacion
+  - action_minima_donacion
+  - action_proximo_vencimiento
+  - action_medicamentos_perdidos
+  - action_maxima_venta
+  - action_minima_venta
+  - action_total_donaciones_enviadas_mes
+  - action_total_donaciones_recibidas_mes
 
 entities:
   - medicamento

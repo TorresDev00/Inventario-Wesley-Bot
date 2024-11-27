@@ -52,3 +52,46 @@ rules:
   steps:
   - intent: preguntar_horarios
   - action: utter_horarios
+  
+
+
+
+- rule: Responder con el medicamento mas donado
+  steps:
+  - intent: maxima_donacion
+  - action: action_maxima_donacion
+
+- rule: Responder con el medicamento menos donado
+  steps:
+  - intent: minima_donacion
+  - action: action_minima_donacion
+
+- rule: Responder con el medicamento proximo a vencer
+  steps:
+  - intent: proximo_vencimiento
+  - action: action_proximo_vencimiento
+
+- rule: Responder con los medicamnetos mas perdidos
+  steps:
+  - intent: medicamento_perdida 
+  - action: action_medicamentos_perdidos
+
+- rule: Responder con el medicamento mas vendido
+  steps:
+  - intent: maxima_venta
+  - action: action_maxima_venta
+
+- rule: Responder con el medicamento menos vendido
+  steps:
+  - intent: minima_venta
+  - action: action_minima_venta
+
+- rule: Responder con el total de donaciones realizadas el mes
+  steps:
+  - intent: total_donaciones_enviadas_mes
+  - action: action_total_donaciones_enviadas_mes
+
+- rule: Responder con el total de donaciones recibidas el mes
+  steps:
+  - intent: total_donaciones_recibidas_mes
+  - action: action_total_donaciones_recibidas_mes

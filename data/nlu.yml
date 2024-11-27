@@ -159,3 +159,115 @@ nlu:
     - ¿Cuándo puedo llevar medicamentos?
     - ¿A qué hora puedo hacer donaciones?
     - ¿Cuándo están abiertos?
+
+- intent: maxima_donacion
+  examples: |
+    - ¿Cual es el medicamento mas donado?
+    - ¿Cual es el medicamento que más dona?
+    - ¿Cual es el medicamento que más se dona?
+    - ¿Cual es el medicamento con mayor donaciones?
+    - ¿Cual es el medicamento con mas donaciones?
+    - ¿Cual es el medicamento más donaciones?
+    - ¿Cual es el medicamento con mayor cantidad de donaciones?
+
+- intent: minima_donacion
+  examples: |
+    - ¿Cual es el medicamento menos donado?
+    - ¿Cual es el medicamento que menos dona?
+    - ¿Cual es el medicamento que menos se dona?
+    - ¿Cual es el medicamento con menor donaciones?
+    - ¿Cual es el medicamento con menos donaciones?
+    - ¿Cual es el medicamento con menor cantidad de donaciones?
+    - ¿Cual es el medicamento con menos cantidad de donaciones?
+
+- intent: proximo_vencimiento
+  examples: |
+    - ¿Cuales son los medicamentos que se vencen próximo?
+    - ¿Cuales son los medicamentos que vencen próximo?
+    - ¿Cuales son los medicamentos que se vencen?
+    - ¿Cuales son los medicamentos que vencen?
+
+- intent: medicamento_perdida
+  examples: |
+    - ¿Cuales son los medicamentos más perdidos?
+    - ¿Cuales son los medicamentos con mayor cantidad de perdidas?
+    - ¿Cuales son los medicamentos con mayor cantidad de perdidas?
+    - ¿Qué medicamentos han perdido más?
+    - ¿Qué medicamentos se ha perdido más?
+    
+- intent: maxima_venta
+  examples: |
+    - cuál es el medicamento más vendido?
+    - ¿cual es el medicamento más vendido?
+    - ¿cual es el medicamento que más se vende?
+    - ¿cual es el medicamento con mayor venta?
+    - ¿cual es el medicamento con mayor venta?
+    - cual es el producto con mayor cantidad de ventas?
+    - qué medicamento vende más?
+    - qué medicamento se vende más?
+    - cuál es el medicamento con mayor venta?
+    - cuál es el medicamento con mayor venta?
+    - cual es el producto con mayor cantidad de ventas?
+    - cual es el producto con mas cantidad de ventas?
+    - cual es el producto con mas ventas?
+    - cual es el producto más vendido?
+    - cual es el producto que más se vende?
+
+- intent: minima_venta
+  examples: |
+    - ¿cuál es el medicamento menos vendido?
+    - ¿cual es el medicamento menos vendido?
+    - ¿cual es el medicamento que menos se vende?
+    - ¿cual es el medicamento con menor venta?
+    - ¿cual es el medicamento con menor venta?
+    - ¿que medicamento vende menos?
+    - ¿Qué medicamento se vende menos?
+    - ¿Cuál es el medicamento con menor venta?
+    - ¿Cuál es el medicamento con menor venta?
+    - ¿Cuál el producto con menor cantidad de ventas?
+    - ¿cuál el producto con menos cantidad de ventas?
+    - ¿cuál el producto con menos ventas?
+    - ¿cuál el producto menos vendido?
+    - ¿cuál el producto que menos se vende?
+
+- intent: total_donaciones_enviadas_mes
+  examples: |
+    - ¿Cuál es el total de donaciones entregados el mes?
+    - ¿Cuál es el total de donaciones entregadas el mes?
+    - ¿Cuál es el total de donaciones enviadas el mes?
+    - ¿Cuál es el total de donaciones hechas el mes?
+    - ¿Cuál es el total de donaciones realizadas el mes?
+    - ¿Cuál es el total de donaciones entregados este mes?
+    - ¿Cuál es el total de donaciones entregadas este mes?
+    - ¿Cuál es el total de donaciones enviadas este mes?
+    - ¿Cuál es el total de donaciones hechas este mes?
+    - ¿Cuál es el total de donaciones realizadas este mes?
+    - ¿Cuál es el total de donaciones entregados en este mes?
+    - ¿Cuál es el total de donaciones entregadas en este mes?
+    - ¿Cuál es el total de donaciones enviadas en este mes?
+    - ¿Cuál es el total de donaciones hechas en este mes?
+    - ¿Cuál es el total de donaciones realizadas en este mes?
+    - ¿Cual es el total de medicamentos donados este mes?
+    - ¿Cual es el total de medicamentos donados el mes?
+    - ¿Cuál es el total de medicamentos donados en este mes?
+    
+
+- intent: total_donaciones_recibidas_mes
+  examples: |
+    - ¿Cuál es el total de donaciones recibidas el mes?
+    - ¿Cuál es el total de donaciones obtenidas el mes?
+    - ¿Cuál es el total de donaciones recolectadas el mes?
+    - ¿Cuál es el total de donaciones captadas el mes?
+    - ¿Cuál es el total de donaciones recibidas este mes?
+    - ¿Cuál es el total de donaciones obtenidas este mes?
+    - ¿Cuál es el total de donaciones recolectadas este mes?
+    - ¿Cuál es el total de donaciones captadas este mes?
+    - ¿Cuál es el total de donaciones recibidas en este mes?
+    - ¿Cuál es el total de donaciones obtenidas en este mes?
+    - ¿Cuál es el total de donaciones recolectadas en este mes?
+    - ¿Cuál es el total de donaciones captadas en este mes?
+    - ¿Cuál es el total de medicamentos recibidos este mes?
+    - ¿Cuál es el total de medicamentos obtenidos este mes?
+    - ¿Cuál es el total de medicamentos recolectados este mes?
+    - ¿Cuál es el total de medicamentos captados este mes?
+
