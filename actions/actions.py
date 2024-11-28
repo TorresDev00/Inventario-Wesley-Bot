@@ -11,6 +11,10 @@ from actions.actions_medications.action_maxima_donacion import ActionMaximaDonac
 from actions.actions_medications.action_upcoming_to_expire import ActionUpcomingProductsToExpire
 from actions.actions_medications.action_minimum_donations import ActionMinimunDonations
 from actions.actions_medications.action_merma_products import ActionMermaProducts
+from actions.actions_medications.action_maximum_sale import ActionMaximumSale
+from actions.actions_medications.action_minimum_sale import ActionMinimumSale
+from actions.actions_medications.action_total_reception import ActionTotalReception 
+from actions.actions_medications.action_total_donation import ActionTotalDonation
 
 # from actions.helpers.utils import log_action_usage
 
