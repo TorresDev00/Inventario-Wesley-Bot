@@ -64,12 +64,13 @@ class ActionCheckDateExpiry(Action):
                     elif dias_restantes <= 30:  # Rango ajustable para "por vencerse"
                         por_vencerse.append(fila)
                 
-                mensaje = f"Resultados para el medicamento: {medicamento}:\n\n"
+                mensaje = f":b:Resultados para el medicamento: {medicamento}: :/b: \n"
                 
                 if vencidos:
-                    mensaje += "Lotes vencidos:\n"
-                    for fila in vencidos:
-                        mensaje += "- Producto: {} | Días vencidos: {} | Cantidad: {}\n".format(
+                    mensaje += ":b:- Lotes vencidos: :/b:\n"
+                    for i,fila in enumerate(vencidos):
+                        mensaje += "{}.- Producto: {} | Días vencidos: {} | Cantidad: {}\n".format(
+                            i+1,
                             fila["producto"],
                             abs(fila["dias_restantes"]),
                             fila["cantidad"]
@@ -77,8 +78,9 @@ class ActionCheckDateExpiry(Action):
                 
                 if por_vencerse:
                     mensaje += "\nLotes próximos a vencerse:\n"
-                    for fila in por_vencerse:
-                        mensaje += "- Producto: {} | Días restantes: {} | Cantidad: {}\n".format(
+                    for i,fila in enumerate(por_vencerse):
+                        mensaje += "{}.- Producto: {} | Días restantes: {} | Cantidad: {}\n".format(
+                            i+1,
                             fila["producto"],
                             fila["dias_restantes"],
                             fila["cantidad"]
