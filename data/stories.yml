@@ -57,10 +57,35 @@ stories:
   - intent: preguntar_horarios
   - action: utter_horarios
 
-# - story: desafio_bot
-#   steps:
-#   - intent: desafiar_bot
-#   - action: utter_soy_un_bot
+- story: desafio_bot
+  steps:
+  - intent: desafiar_bot
+  - action: utter_soy_un_bot
+
+- story: chat_bot
+  steps:
+  - intent: chat_bot
+  - action: utter_que_es_un_bot
+
+- story: services
+  steps:
+  - intent: services
+  - action: utter_services
+
+- story: lenguaje
+  steps:
+  - intent: lenguaje
+  - action: utter_lenguaje
+
+- story: name
+  steps:
+  - intent: name
+  - action: utter_bot_name
+
+- story: agradecimiento
+  steps:
+  - intent: agradecimiento  
+  - action: utter_gracias
 
 - story: maxima_donacion
   steps:

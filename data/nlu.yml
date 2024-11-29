@@ -3,6 +3,8 @@ version: "3.1"
 nlu:
 - intent: saludo
   examples: |
+    - hola Wesley
+    - hola Wesley Bot
     - hola
     - buenos días
     - buenas tardes
@@ -90,7 +92,62 @@ nlu:
     - ¿eres real?
     - ¿eres una inteligencia artificial?
     - ¿eres el bot del centro médico?
+    - ¿Eres un chatbot?
+    - ¿Eres un bot?
+    - ¿Eres un chat bot?
 
+- intent: chat_bot
+  examples: |
+    - ¿Que es un bot?
+    - ¿Qué es un bot?
+    - ¿Que es un chat bot?
+    - ¿Qué es un chat bot?
+    - ¿Qué es un chatbot?
+
+- intent: services
+  examples: |
+    - ¿Qué servicios ofrece?
+    - ¿Qué servicios ofreces?
+    - ¿Cuáles son los servicios ofrecidos?
+    - ¿Cuáles son los servicios que ofreces?
+    - ¿Que puedes hacer por mí?
+    - ¿Que puedes hacer?
+    - ¿Puedes hacer algo por mí?
+
+- intent: lenguaje
+  examples: |
+    - ¿Qué lenguajes puedes hablar?
+    - ¿Qué lenguajes puedes hablar?
+    - ¿Que idiomas puedes hablar?
+    - ¿Que idiomas hablas?
+    - ¿Que idiomas puedes hablar?
+    - ¿Cuantos idiomas puedes hablar?
+    - ¿Cuáles son los idiomas que puedes hablar?
+    - ¿Cuáles son los idiomas que hablas?
+    - ¿Puedes hablar en ingles?
+    - ¿Sabes hablar en ingles?
+
+- intent: name
+  examples: |
+    - ¿Cómo te llamas?
+    - ¿Cómo te llama?
+    - ¿Cuál es tu nombre?
+    - ¿Que nombre tienes?
+    - ¿Que nomre te dieron?
+    - ¿Que nomre te pusieron?
+    - ¿Como puedo llamarte?
+    - ¿Puedes decirme tu nombre?
+    - ¿Puedes darme tu nombre?
+
+- intent: agradecimiento
+  examples: |
+    - gracias
+    - gracias Wesley
+    - gracias Wesley Bot
+    - gracias por ayudarme
+    - gracias por ayudarme Wesley
+    - gracias por ayudarme Wesley Bot
+    
 # Intenciones específicas para el centro médico
 - intent: consultar_inventario
   examples: |

@@ -8,6 +8,11 @@ intents:
   - feliz
   - triste
   - desafiar_bot
+  - chat_bot
+  - services
+  - lenguaje
+  - name
+  - agradecimiento
   - consultar_inventario
   - solicitar_donacion
   - preguntar_requisitos_donacion
@@ -29,10 +34,6 @@ responses:
     - text: "¡Hola! ¿En qué puedo ayudarte?"
   utter_despedida:
     - text: "Adiós, ¡que tengas un buen día!"
-  utter_afirmativo:
-    - text: "¡Perfecto!"
-  utter_negativo:
-    - text: "Entendido."
   utter_feliz:
     - text: "¡Me alegra saberlo!"
   utter_triste:
@@ -45,8 +46,16 @@ responses:
     - text: "Actualmente necesitamos medicamentos básicos como analgésicos, antibióticos y vitaminas. Para más detalles, por favor consulta con nosotros."
   utter_horarios:
     - text: "Estamos abiertos de lunes a viernes, de 8:00 a.m. a 5:00 p.m."
-  utter_inventario_no_disponible:
-    - text: "Lo siento, en este momento no tengo esa información. Intenta consultar con el personal del centro médico."
+  utter_que_es_un_bot: 
+    - text: "Un chatbot es un programa informático que simula la conversación humana con un usuario."
+  utter_services:
+    - text: "Puedo consultar el inventario de medicamentos, consultar la fecha de vencimiento de los medicamentos, solicitar donaciones, consultar los horarios de atención, consultar las donaciones recibidas y las donaciones enviadas, y más."
+  utter_lenguaje:
+    - text:  "Fui entrenado para solo hablar en español"
+  utter_bot_name:
+    - text: "Puedes llamarme Wesley Bot ."
+  utter_gracias:
+    - text: "Un placer en ayudarte, si necesitas algo más, no dudes en preguntar."
 
 actions:
   - action_check_inventory

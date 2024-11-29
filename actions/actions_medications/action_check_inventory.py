@@ -41,10 +41,11 @@ class ActionCheckInventory(Action):
                 WHERE
                     id_sede = %s
                     AND ps.cantidad > 0
-                    AND ps.presentacion_producto LIKE %s
+                    AND ps.presentacion_producto LIKE %s 
+                    OR ps.clase LIKE %s
             """
             # Ejecutar consulta
-            result = db.execute_query(query, (id_sede, f"%{medicamento}%"))
+            result = db.execute_query(query, (id_sede, f"%{medicamento}%", f"%{medicamento}%"))
 
             if result:
                 # Preparar una respuesta con los detalles del inventario

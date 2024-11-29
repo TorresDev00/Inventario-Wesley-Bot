@@ -21,7 +21,32 @@ rules:
 - rule: Responder negativamente cuando el usuario niega
   steps:
   - intent: negar
-  - action: utter_despedida  
+  - action: utter_despedida
+
+- rule: Responder con información sobre el bot
+  steps:
+  - intent: chat_bot
+  - action: utter_que_es_un_bot
+
+- rule: Responder con información sobre los servicios
+  steps:
+  - intent: services
+  - action: utter_services
+
+- rule: Responder con información sobre el lenguaje
+  steps:
+  - intent: lenguaje
+  - action: utter_lenguaje
+
+- rule: Responder con información sobre el nombre del bot
+  steps:
+  - intent: name
+  - action: utter_bot_name
+
+- rule: Responder con agradecimiento
+  steps:
+  - intent: agradecimiento  
+  - action: utter_gracias
 
 - rule: Consultar inventario de medicamentos
   steps:
@@ -53,8 +78,15 @@ rules:
   - intent: preguntar_horarios
   - action: utter_horarios
   
+- rule: Responder con el nombre del bot
+  steps:
+  - intent: name
+  - action: utter_bot_name
 
-
+- rule: Responder con agradecimiento
+  steps:
+  - intent: agradecimiento  
+  - action: utter_gracias
 
 - rule: Responder con el medicamento mas donado
   steps:

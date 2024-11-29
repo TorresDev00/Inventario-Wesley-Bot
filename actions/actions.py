@@ -1,3 +1,4 @@
+import random
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -24,6 +25,30 @@ class ActionDefault(Action):
         return "action_default_response"
     
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # log_action_usage(self.name())
-        dispatcher.utter_message(text="Lo siento, no entendí tu pregunta.")
+        # Mensajes de respuesta cuando no se entiende la pregunta
+        default_responses = [
+            "Lo siento, no entendí tu pregunta. ¿Podrías reformularla?",
+            "No estoy seguro de cómo responder eso. Intenta con algo más específico.",
+            "Disculpa, no tengo una respuesta para eso. ¿Hay algo más en lo que pueda ayudarte?",
+            "Esa pregunta me toma por sorpresa. Tal vez pueda ayudarte de otra manera."
+        ]
+        
+        # Elegir un mensaje aleatorio
+        response = random.choice(default_responses)
+        
+        # Opcional: Log de la interacción no entendida
+        user_message = tracker.latest_message.get("text", "No se pudo capturar el texto.")
+        print(f"Mensaje no entendido: {user_message}")
+        
+        # Opcional: Sugerencias para el usuario
+        suggestions = [
+            "Puedes intentar preguntar: '¿Cuántos medicamentos se vencen pronto?'",
+            "Prueba con: '¿Cuántas donaciones se han recibido este mes?'",
+            "Intenta: '¿Cuál es el medicamento más vendido?'"
+        ]
+        response += "\n\n" + random.choice(suggestions)
+        
+        # Enviar mensaje al usuario
+        dispatcher.utter_message(text=response)
+        
         return []
