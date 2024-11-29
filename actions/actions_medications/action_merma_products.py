@@ -49,10 +49,10 @@ class ActionMermaProducts(Action):
             print(f"Resultados encontrados: {results}")
             
             if results:
-                mensaje = "Los productos con más pérdidas en el último mes son:\n"
-                for fila in results:
+                mensaje = ":b:Los productos con más pérdidas en el último mes son: :/b: \n"
+                for i,fila in enumerate(results):
                     mensaje += (
-                        f"- {fila['producto']} con un total de {fila['cantidad_perdida']} unidades perdidas.\n"
+                        f"{i+1}.- {fila['producto']} con un total de {fila['cantidad_perdida']} unidades perdidas.\n"
                     )
             else:
                 mensaje = "No se encontraron registros de pérdidas en el último mes."

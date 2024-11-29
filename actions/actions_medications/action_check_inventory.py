@@ -41,17 +41,19 @@ class ActionCheckInventory(Action):
                 WHERE
                     id_sede = %s
                     AND ps.cantidad > 0
-                    AND ps.presentacion_producto LIKE %s
+                    AND ps.presentacion_producto LIKE %s 
+                    OR ps.clase LIKE %s
             """
             # Ejecutar consulta
-            result = db.execute_query(query, (id_sede, f"%{medicamento}%"))
+            result = db.execute_query(query, (id_sede, f"%{medicamento}%", f"%{medicamento}%"))
 
             if result:
                 # Preparar una respuesta con los detalles del inventario
-                respuesta = "Detalles del inventario para el medicamento solicitado:\n"
-                for item in result:
-                    respuesta += (f"- {item['presentacion_producto']} ({item['presentacion_peso']} {item['medida']}), "
-                                  f"Lote: {item['lote']}, Vence: {item['fecha_vencimiento']}, "
+                respuesta = ":b:Detalles del inventario para el medicamento solicitado: :/b: \n"
+                for i, item in enumerate(result):
+                    respuesta += (f":b:{i+1}.- {item['presentacion_producto']}:/b: \n"
+                                  f"Lote: {item['lote']} \n"
+                                  f"Vence: {item['fecha_vencimiento']} \n"
                                   f"Cantidad disponible: {item['inventario']}\n")
                 dispatcher.utter_message(text=respuesta)
             else:
